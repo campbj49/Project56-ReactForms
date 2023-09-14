@@ -1,6 +1,6 @@
 import "./App.css";
 import BoxList from "./BoxList";
-import photos from "./photos.js";
+import ToDoList from "./ToDoList";
 
 /** App component, renders BoxList
  * 
@@ -14,7 +14,8 @@ function App() {
 
   return (
     <div className="App">
-      <BoxList/>
+      {/* <BoxList/> */}
+      <ToDoList/>
     </div>
   );
 }
