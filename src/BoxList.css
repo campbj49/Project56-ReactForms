@@ -1,16 +1,16 @@
-.Carousel-main {
+.BoxList-main {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.Carousel-main > i {
+.BoxList-main > i {
   cursor: pointer;
   margin: 10px;
   color: #aaa;
 }
 
-.Carousel-main > i:hover {
+.BoxList-main > i:hover {
   color: black;
 }
 

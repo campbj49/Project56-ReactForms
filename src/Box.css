@@ -1,0 +1,9 @@
+.Box {
+  display: flex;
+  flex-direction: column;
+  width: 40px;
+}
+
+p{
+  cursor: pointer;
+}
