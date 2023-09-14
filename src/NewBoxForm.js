@@ -33,11 +33,11 @@ function NewBoxForm({onSubmit}){
     return(
         <form onSubmit={onSubmit}>
             <label htmlFor="height">Height</label>
-            <input type="text" id="height" onChange={handleChange}></input><br/>
+            <input required type="number" id="height" onChange={handleChange}></input><br/>
             <label htmlFor="width">Width</label>
-            <input type="text" id="width" onChange={handleChange}></input><br/>
+            <input required type="number"id="width" onChange={handleChange}></input><br/>
             <label htmlFor="backgroundColor">Background Color</label>
-            <input type="text" id="backgroundColor" onChange={handleChange}></input><br/>
+            <input required type="text" id="backgroundColor" onChange={handleChange}></input><br/>
             <button>Create Box</button>
         </form>
     )

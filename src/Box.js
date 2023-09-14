@@ -16,6 +16,7 @@ import "./Box.css";
  */
 
  function Box({id, backgroundColor, width, height,remove}) {
+  console.log(height);
 
   return (
     <div 

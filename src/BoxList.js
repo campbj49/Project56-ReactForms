@@ -12,7 +12,7 @@ import NewBoxForm from "./NewBoxForm";
  *          |__> NewBoxForm
  */
  function BoxList(props) {
-  const [list, setList] = useState([{heigh:50, width:40, backgroundColor:"blue"}]);
+  const [list, setList] = useState([{height:360, width:420, backgroundColor:"blue"}]);
 
   //function that removes the tartgeted box from the list
   function remove(e){
@@ -24,8 +24,8 @@ import NewBoxForm from "./NewBoxForm";
     evt.preventDefault();
     let rawData = evt.target.querySelectorAll("input");
     let newBox = {
-      height:rawData[0].value,
-      width: rawData[1].value,
+      height:parseInt(rawData[0].value),
+      width: parseInt(rawData[1].value),
       backgroundColor: rawData[2].value
     }
     addList(newBox);
@@ -40,6 +40,7 @@ import NewBoxForm from "./NewBoxForm";
     <div className="BoxList">
       <NewBoxForm onSubmit={onSubmit}/>
       {list.map((box,i) => 
+        //console.log(box.heigh);
         <Box 
         height={box.height} 
         width={box.width}
