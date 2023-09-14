@@ -12,7 +12,7 @@ import NewBoxForm from "./NewBoxForm";
  *          |__> NewBoxForm
  */
  function BoxList(props) {
-  const [list, setList] = useState([{height:360, width:420, backgroundColor:"blue"}]);
+  const [list, setList] = useState([]);
 
   //function that removes the tartgeted box from the list
   function remove(e){
